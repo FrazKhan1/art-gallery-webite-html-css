@@ -1,0 +1,133 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fff;
+}
+.bg-black {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #151515;
+  width: 30%;
+  height: 800px;
+  display: none;
+}
+.hero-image {
+  position: absolute;
+  top: 0px;
+  left: 30%;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 800px;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: start;
+  width: 90%;
+  z-index: 999;
+}
+.left h1 {
+  font-family: Big Shoulders Display;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 88px; /* 91.667% */
+  text-transform: uppercase;
+  mix-blend-mode: difference;
+  color: #fff;
+  margin-left: 120px;
+}
+.right {
+  width: 350px;
+}
+.right p {
+  font-family: Outfit;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px; /* 145.455% */
+}
+.btn-location {
+  width: 260px;
+  display: flex;
+  margin-top: 20px;
+}
+
+.btn-location .btn {
+  color: #fff;
+  background-color: #151515;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn button {
+  width: 206px;
+  height: 72px;
+  color: #fff;
+  font-family: Big Shoulders Display;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 3.636px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.btn-location .btn-image {
+  width: 56px;
+  background-color: #d5966c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 1100px) {
+  .bg-black {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .hero-image {
+    left: 0;
+  }
+  .hero-image img {
+    left: 0;
+    width: 437px;
+    height: 700px;
+  }
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    width: 50%;
+    z-index: 999;
+    gap: 40px;
+    margin-left: 27rem;
+  }
+  .left h1 {
+    color: #000;
+    margin-left: 0px;
+    width: 339px;
+    font-size: 70px;
+    line-height: 65px;
+  }
+  .right p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px; /* 155.556% */
+  }
+}
